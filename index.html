@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bennie Tay Studio | AI-Powered Business Operating System</title>
+    <script>
+      (function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const ref = urlParams.get("ref");
+        if (ref) {
+          localStorage.setItem("ref_platform", ref);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
